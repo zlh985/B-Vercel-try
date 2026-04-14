@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "sessionId": "7f18823d-afdf-43d5-9035-f84668241a43",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "3a0c5358-2925-47d3-b2b1-60a2a8979238",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "hello",
+          "autoMentionContext": {
+            "noteName": "SKILL",
+            "notePath": ".windsurf/skills/my-test-skills/SKILL.md"
+          }
+        }
+      ],
+      "timestamp": "2026-03-03T07:19:31.324Z"
+    },
+    {
+      "id": "f023b220-3cf6-4245-8f09-021dcf2a4755",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "用户发送了简单的问候，我需要用中文友好地回应并询问是否需要帮助。\n"
+        },
+        {
+          "type": "text",
+          "text": "你好！有什么我可以帮助你的吗？"
+        }
+      ],
+      "timestamp": "2026-03-03T07:19:33.712Z"
+    }
+  ],
+  "savedAt": "2026-03-03T07:19:34.257Z"
+}

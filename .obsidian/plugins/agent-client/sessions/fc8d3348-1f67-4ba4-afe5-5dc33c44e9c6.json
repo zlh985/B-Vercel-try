@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "sessionId": "fc8d3348-1f67-4ba4-afe5-5dc33c44e9c6",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "8e56aa4d-96d7-441c-9ee0-aa620711fb40",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加用例",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md",
+            "selection": {
+              "fromLine": 13,
+              "toLine": 13
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-02-26T08:31:05.027Z"
+    },
+    {
+      "id": "d33ce3f0-8ee1-4c43-9f71-879691dcf2f7",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加用例",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md",
+            "selection": {
+              "fromLine": 13,
+              "toLine": 13
+            }
+          }
+        }
+      ],
+      "timestamp": "2026-02-26T08:31:30.173Z"
+    }
+  ],
+  "savedAt": "2026-02-26T08:31:30.591Z"
+}

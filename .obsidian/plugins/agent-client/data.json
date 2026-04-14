@@ -1,0 +1,333 @@
+{
+  "claude": {
+    "id": "claude-code-acp",
+    "displayName": "Claude Code",
+    "apiKey": "39fe3120-e0d6-462e-bd55-4361afe8bb57",
+    "command": "C:\\Users\\Administrator\\AppData\\Roaming\\npm\\claude-agent-acp.cmd",
+    "args": [],
+    "env": []
+  },
+  "codex": {
+    "id": "codex-acp",
+    "displayName": "Codex",
+    "apiKey": "",
+    "command": "",
+    "args": [],
+    "env": []
+  },
+  "gemini": {
+    "id": "gemini-cli",
+    "displayName": "Gemini CLI",
+    "apiKey": "",
+    "command": "",
+    "args": [
+      "--experimental-acp"
+    ],
+    "env": []
+  },
+  "customAgents": [],
+  "defaultAgentId": "claude-code-acp",
+  "autoAllowPermissions": true,
+  "autoMentionActiveNote": true,
+  "debugMode": false,
+  "nodePath": "E:/nodejs/node.exe",
+  "exportSettings": {
+    "defaultFolder": "Agent Client",
+    "filenameTemplate": "agent_client_{date}_{time}",
+    "autoExportOnNewChat": false,
+    "autoExportOnCloseChat": false,
+    "openFileAfterExport": true,
+    "includeImages": true,
+    "imageLocation": "obsidian",
+    "imageCustomFolder": "Agent Client",
+    "frontmatterTag": "agent-client"
+  },
+  "windowsWslMode": false,
+  "sendMessageShortcut": "enter",
+  "chatViewLocation": "right-tab",
+  "displaySettings": {
+    "autoCollapseDiffs": false,
+    "diffCollapseThreshold": 10,
+    "maxNoteLength": 10000,
+    "maxSelectionLength": 10000,
+    "showEmojis": true,
+    "fontSize": null
+  },
+  "savedSessions": [
+    {
+      "sessionId": "98a8a0fd-4979-40a3-92f0-db62d6c798cc",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "IT-傅承焕(963282829)  17:59:37\n[2026-04-11 15:06:52,7...",
+      "createdAt": "2026-04-11T10:03:08.217Z",
+      "updatedAt": "2026-04-11T10:03:08.217Z"
+    },
+    {
+      "sessionId": "22253f6f-e23d-4753-b310-9ff3b2496aaa",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "翻译文字为中文 は术分と熱に码心\n(奔使用上の注意)\n\n墨は奈良を中心に製近され不主いり生したが、恭...",
+      "createdAt": "2026-04-11T01:04:42.464Z",
+      "updatedAt": "2026-04-11T01:04:42.464Z"
+    },
+    {
+      "sessionId": "71521532-9a18-4f1c-bbb9-e5240a84ff6a",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "/caveman wenyan",
+      "createdAt": "2026-04-10T02:07:32.732Z",
+      "updatedAt": "2026-04-10T02:07:32.732Z"
+    },
+    {
+      "sessionId": "72f958ee-ab3e-4704-a6b3-5bcd9aad3808",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "你现在模式是否为caveman",
+      "createdAt": "2026-04-10T01:55:18.471Z",
+      "updatedAt": "2026-04-10T01:55:18.471Z"
+    },
+    {
+      "sessionId": "bb4abd86-6050-48d3-bddb-e08725820531",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "你现在的模式是否为caveman",
+      "createdAt": "2026-04-10T01:49:48.319Z",
+      "updatedAt": "2026-04-10T01:49:48.319Z"
+    },
+    {
+      "sessionId": "c4b6b915-42e3-43d7-bf73-69550728ad31",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "/caveman wenyan",
+      "createdAt": "2026-04-10T01:47:02.486Z",
+      "updatedAt": "2026-04-10T01:47:02.486Z"
+    },
+    {
+      "sessionId": "edf89e59-16a2-46ee-90d9-280ed60681a2",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "你现在模式是否为caveman",
+      "createdAt": "2026-04-10T00:50:54.082Z",
+      "updatedAt": "2026-04-10T00:50:54.082Z"
+    },
+    {
+      "sessionId": "75b925a1-55bf-4f27-8452-fb030d5bd145",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "现在是否使用了 caveman模式",
+      "createdAt": "2026-04-07T01:48:46.157Z",
+      "updatedAt": "2026-04-07T01:48:46.157Z"
+    },
+    {
+      "sessionId": "90ec5b17-5ebd-4cd8-955e-b4072f70ced8",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "现在是否使用caveman模式",
+      "createdAt": "2026-04-07T01:45:31.843Z",
+      "updatedAt": "2026-04-07T01:45:31.843Z"
+    },
+    {
+      "sessionId": "7d300b98-9046-4608-985d-19992e168248",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello 你的AI model是什么",
+      "createdAt": "2026-03-11T06:41:24.351Z",
+      "updatedAt": "2026-03-11T06:41:24.351Z"
+    },
+    {
+      "sessionId": "78906ad2-8aa7-4ad4-90b3-71f6278da00c",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-03-09T03:04:11.438Z",
+      "updatedAt": "2026-03-09T03:04:11.438Z"
+    },
+    {
+      "sessionId": "91406f74-33bd-40c9-998a-2bf017914cda",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-03-04T08:18:34.333Z",
+      "updatedAt": "2026-03-04T08:18:34.333Z"
+    },
+    {
+      "sessionId": "7681f81e-af02-4409-a4e5-f8b989478d88",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "将文档写入到 http://192.168.10.198:8090/pages/viewpage.a...",
+      "createdAt": "2026-03-04T02:15:22.740Z",
+      "updatedAt": "2026-03-04T02:15:22.740Z"
+    },
+    {
+      "sessionId": "067aa629-6cc8-4a5b-a26a-1636e28fa280",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-03-03T07:51:16.120Z",
+      "updatedAt": "2026-03-03T07:51:16.120Z"
+    },
+    {
+      "sessionId": "2a24cde0-1066-4c9e-8a61-185ae5a282bc",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-03-03T07:50:05.088Z",
+      "updatedAt": "2026-03-03T07:50:05.088Z"
+    },
+    {
+      "sessionId": "aa86ebe3-43f4-442b-baea-6b972c039106",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-03-03T07:44:56.046Z",
+      "updatedAt": "2026-03-03T07:44:56.046Z"
+    },
+    {
+      "sessionId": "7f18823d-afdf-43d5-9035-f84668241a43",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-03-03T07:19:34.226Z",
+      "updatedAt": "2026-03-03T07:19:34.250Z"
+    },
+    {
+      "sessionId": "ebfc1d77-656a-43e4-a3e4-cbfef5135e5e",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "增加引用路径文字 logistics-service\\src\\main\\java\\com\\zheng...",
+      "createdAt": "2026-03-03T03:57:47.221Z",
+      "updatedAt": "2026-03-03T03:57:47.221Z"
+    },
+    {
+      "sessionId": "0daff70d-74e8-4d4e-92f2-0ee38022843b",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-02-28T06:12:46.876Z",
+      "updatedAt": "2026-02-28T06:12:46.894Z"
+    },
+    {
+      "sessionId": "63d21b45-e175-4939-b332-e31452501043",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "1-0.0000001等于多少",
+      "createdAt": "2026-02-27T08:33:53.719Z",
+      "updatedAt": "2026-02-27T08:33:53.719Z"
+    },
+    {
+      "sessionId": "a5423c00-8ed0-444f-909d-33f8210b9118",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-02-27T08:31:15.491Z",
+      "updatedAt": "2026-02-27T08:31:15.491Z"
+    },
+    {
+      "sessionId": "39752cc6-3685-49df-9312-cf8aaa0da8d2",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "你的AI model是哪一个，版本多少",
+      "createdAt": "2026-02-27T08:29:49.879Z",
+      "updatedAt": "2026-02-27T08:29:49.879Z"
+    },
+    {
+      "sessionId": "a41cdd13-60ae-436d-9bfc-e8e4be15272c",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "增加测试用例",
+      "createdAt": "2026-02-27T00:59:52.686Z",
+      "updatedAt": "2026-02-27T00:59:52.760Z"
+    },
+    {
+      "sessionId": "4942fcea-5c97-4b6e-b5d3-08de89707bbe",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "forkJoinPool16需要在文档指名，是动态定义的",
+      "createdAt": "2026-02-26T09:40:01.905Z",
+      "updatedAt": "2026-02-26T09:40:01.905Z"
+    },
+    {
+      "sessionId": "a5ff2595-298b-48e2-b05a-b18588a837c4",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "你的AI智能体模型是什么",
+      "createdAt": "2026-02-26T08:33:07.383Z",
+      "updatedAt": "2026-02-26T08:33:07.383Z"
+    },
+    {
+      "sessionId": "fc8d3348-1f67-4ba4-afe5-5dc33c44e9c6",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "增加用例",
+      "createdAt": "2026-02-26T08:31:05.656Z",
+      "updatedAt": "2026-02-26T08:31:05.656Z"
+    },
+    {
+      "sessionId": "e46a06be-7281-48ae-b632-ed5836171d1a",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "增加循环说明",
+      "createdAt": "2026-02-26T08:30:17.451Z",
+      "updatedAt": "2026-02-26T08:30:17.451Z"
+    },
+    {
+      "sessionId": "8cbd54f0-51d3-425a-810b-98c47f637257",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "增加 循环使用并行，同时独立使用一个ForkJoinPool",
+      "createdAt": "2026-02-26T08:28:12.712Z",
+      "updatedAt": "2026-02-26T08:28:12.734Z"
+    },
+    {
+      "sessionId": "20c0afba-5f15-4eba-805d-dd15c26343d0",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "不需要联系上下文，直接修改，使用并行",
+      "createdAt": "2026-02-25T09:46:41.864Z",
+      "updatedAt": "2026-02-25T09:46:41.864Z"
+    },
+    {
+      "sessionId": "bcf5335f-4b4e-4c65-80c8-1d5ee09f9026",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "增加List用例，不需要理解整个上下文",
+      "createdAt": "2026-02-25T09:34:29.790Z",
+      "updatedAt": "2026-02-25T09:34:29.790Z"
+    },
+    {
+      "sessionId": "8d7ad9e9-f8a5-4b0c-ae20-c5e9a210d5da",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-02-25T09:17:31.079Z",
+      "updatedAt": "2026-02-25T09:17:31.079Z"
+    },
+    {
+      "sessionId": "db444896-feb3-4f76-b244-b51887c975cc",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-02-25T09:02:08.824Z",
+      "updatedAt": "2026-02-25T09:02:08.860Z"
+    },
+    {
+      "sessionId": "bd25d43e-5aa3-4a26-9b93-3156a91c6f7e",
+      "agentId": "claude-code-acp",
+      "cwd": "D:\\01_WorkArea\\zhengding-lingxing-microservice",
+      "title": "hello",
+      "createdAt": "2026-02-25T08:46:31.048Z",
+      "updatedAt": "2026-02-25T08:46:31.096Z"
+    }
+  ],
+  "lastUsedModels": {
+    "claude-code-acp": "default"
+  },
+  "showFloatingButton": false,
+  "floatingButtonImage": "",
+  "floatingWindowSize": {
+    "width": 400,
+    "height": 500
+  },
+  "floatingWindowPosition": null,
+  "floatingButtonPosition": null
+}

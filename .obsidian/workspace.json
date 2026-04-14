@@ -1,0 +1,239 @@
+{
+  "main": {
+    "id": "4a1cbde1fe33e7b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "35c92e1ef47e7149",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23f7a53839b0fe3c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a86a2e63a53f4111",
+    "type": "split",
+    "children": [
+      {
+        "id": "baeffa79059bedd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9620856eb109883",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "d558fd538f4c5797",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "4eefb602e47cf9ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "35ec205d5e7fa25b",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ddd36286e44524f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8e8f739455653c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2e11b7173dbf401",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "未命名.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
+            }
+          },
+          {
+            "id": "b68046b8664ba73e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "442158f91b7a696a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "59313d78940423ee",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "274b69e7e54d554c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "204bf3f5986f08d9",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "未命名.canvas"
+              },
+              "icon": "lucide-file-signature",
+              "title": "脚注"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "agent-client:Open agent client": false,
+      "obsidian42-brat:BRAT": false,
+      "hide-folders:Hide hidden folders again": false,
+      "media-extended:Open external media": false,
+      "pandoc-extended-markdown:Open list panel": false,
+      "vscode-editor:新建代码文件": false,
+      "publish:发布更改": false,
+      "workspaces:管理工作区布局": false,
+      "random-note:开始漫游笔记": false,
+      "zk-prefixer:创建时间戳笔记": false
+    }
+  },
+  "active": "23f7a53839b0fe3c",
+  "lastOpenFiles": [
+    "未命名.canvas",
+    ".obsidian/plugins/agent-client/main.js",
+    "README.md",
+    ".trae/skills/check-prd-universal-prompt/SKILL.md",
+    ".obsidian/plugins/agent-client/sessions/ebfc1d77-656a-43e4-a3e4-cbfef5135e5e.json",
+    ".obsidian/plugins/agent-client/sessions/fc8d3348-1f67-4ba4-afe5-5dc33c44e9c6.json",
+    ".obsidian/plugins/agent-client/sessions/edf89e59-16a2-46ee-90d9-280ed60681a2.json",
+    ".obsidian/plugins/agent-client/sessions/e46a06be-7281-48ae-b632-ed5836171d1a.json",
+    ".obsidian/plugins/agent-client/sessions/c4b6b915-42e3-43d7-bf73-69550728ad31.json",
+    ".obsidian/plugins/agent-client/sessions/db444896-feb3-4f76-b244-b51887c975cc.json",
+    ".obsidian/plugins/agent-client/sessions/aa86ebe3-43f4-442b-baea-6b972c039106.json",
+    ".obsidian/plugins/agent-client/sessions/bd25d43e-5aa3-4a26-9b93-3156a91c6f7e.json",
+    ".obsidian/plugins/agent-client/sessions/bcf5335f-4b4e-4c65-80c8-1d5ee09f9026.json",
+    ".qwen/skills/create-prd-universal-prompt/SKILL.md",
+    ".qwen/skills/check-prd-universal-prompt/SKILL.md",
+    ".trae/skills/create-prd-universal-prompt/SKILL.md"
+  ]
+}

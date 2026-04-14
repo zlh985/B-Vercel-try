@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "sessionId": "bcf5335f-4b4e-4c65-80c8-1d5ee09f9026",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "4e78242b-7bc0-4168-b310-55ff14861069",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加List用例，不需要理解整个上下文",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-25T09:34:28.711Z"
+    },
+    {
+      "id": "a3b2128f-57f2-43e0-a6d6-41bd0a6c4dc8",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加List用例，不需要理解整个上下文",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-25T09:35:33.146Z"
+    },
+    {
+      "id": "8fc9bce0-d9b5-419d-b0d2-708110e17e70",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加List用例，不需要理解整个上下文",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-25T09:36:28.118Z"
+    }
+  ],
+  "savedAt": "2026-02-25T09:36:28.455Z"
+}

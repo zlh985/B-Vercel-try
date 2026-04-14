@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "sessionId": "a5423c00-8ed0-444f-909d-33f8210b9118",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "975bc41a-200c-4560-b886-d4af52950e26",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "hello",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-27T08:31:14.998Z"
+    }
+  ],
+  "savedAt": "2026-02-27T08:31:15.494Z"
+}

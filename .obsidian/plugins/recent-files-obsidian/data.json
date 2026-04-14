@@ -1,0 +1,56 @@
+{
+  "recentFiles": [
+    {
+      "basename": "未命名",
+      "path": "未命名.canvas"
+    },
+    {
+      "basename": "main",
+      "path": ".obsidian/plugins/agent-client/main.js"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "SKILL",
+      "path": ".trae/skills/check-prd-universal-prompt/SKILL.md"
+    },
+    {
+      "basename": "ConsumerListenerWaybillAspect",
+      "path": "logistics-service/src/main/java/com/zhengding/cloud/logistics/config/aop/ConsumerListenerWaybillAspect.java"
+    },
+    {
+      "basename": "JavaMelodyConfiguration",
+      "path": "logistics-service/src/main/java/com/zhengding/cloud/logistics/config/melody/JavaMelodyConfiguration.java"
+    },
+    {
+      "basename": "MicrometerConfig",
+      "path": "logistics-service/src/main/java/com/zhengding/cloud/logistics/config/micrometer/MicrometerConfig.java"
+    },
+    {
+      "basename": "ExpressRuleCountryBasicController",
+      "path": "logistics-service/src/main/java/com/zhengding/cloud/logistics/controller/ExpressRuleCountryBasicController.java"
+    },
+    {
+      "basename": "CLAUDE",
+      "path": "CLAUDE.md"
+    },
+    {
+      "basename": "SKILL",
+      "path": ".windsurf/skills/database-test-report/SKILL.md"
+    },
+    {
+      "basename": "SKILL",
+      "path": ".windsurf/skills/my-test-skills/SKILL.md"
+    },
+    {
+      "basename": "LogisticsServiceApplication",
+      "path": "logistics-service/src/main/java/com/zhengding/cloud/logistics/LogisticsServiceApplication.java"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

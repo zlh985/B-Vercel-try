@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄工作法计时器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFE5B4 0%, #FFC0CB 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(255, 140, 0, 0.3);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #E86000;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(255, 140, 0, 0.2);
+        }
+
+        .mode-indicator {
+            font-size: 1.2em;
+            color: #FF8C00;
+            margin-bottom: 30px;
+            padding: 10px 20px;
+            background: rgba(255, 140, 0, 0.1);
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .progress-ring {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .progress-ring svg {
+            transform: rotate(-90deg);
+            display: block;
+        }
+
+        .timer-wrapper {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            margin: 20px auto;
+        }
+
+        .progress-ring__bg {
+            fill: none;
+            stroke: #FFE4B5;
+            stroke-width: 8;
+        }
+
+        .progress-ring__progress {
+            fill: none;
+            stroke: url(#gradient);
+            stroke-width: 8;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.5s;
+        }
+
+        .timer-display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3.5em;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+            text-shadow: 3px 3px 6px rgba(255, 99, 71, 0.3);
+            transition: color 0.3s;
+            z-index: 1;
+            white-space: nowrap;
+        }
+
+        .timer-display.work {
+            color: #FF6347;
+        }
+
+        .timer-display.break {
+            color: #FF8C00;
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 15px 35px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .btn-start {
+            background: linear-gradient(135deg, #FF6347 0%, #FF8C00 100%);
+            color: white;
+        }
+
+        .btn-pause {
+            background: linear-gradient(135deg, #FFA500 0%, #FFB347 100%);
+            color: white;
+        }
+
+        .btn-reset {
+            background: linear-gradient(135deg, #FFB347 0%, #FFD700 100%);
+            color: white;
+        }
+
+        .btn-skip {
+            background: linear-gradient(135deg, #FFCC80 0%, #FFE0B2 100%);
+            color: #E86000;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .settings {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .settings h3 {
+            color: #E86000;
+            margin-bottom: 15px;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .setting-item input {
+            width: 80px;
+            padding: 8px;
+            border: 2px solid #FFB347;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        .stats {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 140, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .stats p {
+            color: #E86000;
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .pulse {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .shake {
+            animation: shake 0.5s;
+        }
+
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="container">
+        <h1>🍅 番茄工作法</h1>
+        <div class="mode-indicator" id="modeIndicator">工作模式</div>
+        
+        <div class="timer-wrapper">
+            <div class="progress-ring">
+                <svg width="280" height="280">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FF6347" />
+                            <stop offset="100%" stop-color="#FF8C00" />
+                        </linearGradient>
+                    </defs>
+                    <circle class="progress-ring__bg" cx="140" cy="140" r="130" />
+                    <circle class="progress-ring__progress" id="progressRing" cx="140" cy="140" r="130"
+                            stroke-dasharray="816.81" stroke-dashoffset="0" />
+                </svg>
+            </div>
+            <div class="timer-display work" id="timerDisplay">25:00</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn-start" id="startBtn" onclick="startTimer()">开始</button>
+            <button class="btn-pause" id="pauseBtn" onclick="pauseTimer()" disabled>暂停</button>
+            <button class="btn-reset" id="resetBtn" onclick="resetTimer()">重置</button>
+            <button class="btn-skip" id="skipBtn" onclick="skipToNext()">跳过</button>
+        </div>
+
+        <div class="settings">
+            <h3>⚙️ 设置</h3>
+            <div class="setting-item">
+                <label>工作时长（分钟）:</label>
+                <input type="number" id="workDuration" value="25" min="1" max="60" onchange="updateSettings()">
+            </div>
+            <div class="setting-item">
+                <label>休息时长（分钟）:</label>
+                <input type="number" id="breakDuration" value="5" min="1" max="30" onchange="updateSettings()">
+            </div>
+        </div>
+
+        <div class="stats">
+            <p>✅ 完成的番茄数: <span id="completedPomodoros">0</span></p>
+            <p>⏱️ 总工作时长: <span id="totalWorkTime">0</span> 分钟</p>
+        </div>
+    </div>
+
+    <script>
+        let timerInterval = null;
+        let timeLeft = 25 * 60;
+        let totalTime = 25 * 60;
+        let isRunning = false;
+        let isWorkMode = true;
+        let completedPomodoros = 0;
+        let totalWorkMinutes = 0;
+
+        const timerDisplay = document.getElementById('timerDisplay');
+        const modeIndicator = document.getElementById('modeIndicator');
+        const startBtn = document.getElementById('startBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const progressRing = document.getElementById('progressRing');
+        const circumference = 2 * Math.PI * 130;
+
+        function updateDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            
+            const progress = ((totalTime - timeLeft) / totalTime) * circumference;
+            progressRing.style.strokeDashoffset = circumference - progress;
+            
+            document.title = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')} - 番茄工作法`;
+        }
+
+        function startTimer() {
+            if (isRunning) return;
+            
+            isRunning = true;
+            startBtn.disabled = true;
+            pauseBtn.disabled = false;
+            timerDisplay.classList.add('pulse');
+            
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateDisplay();
+                
+                if (isWorkMode) {
+                    totalWorkMinutes = completedPomodoros * parseInt(document.getElementById('workDuration').value);
+                    document.getElementById('totalWorkTime').textContent = totalWorkMinutes;
+                }
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    timerInterval = null;
+                    isRunning = false;
+                    timerDisplay.classList.remove('pulse');
+                    timerDisplay.classList.add('shake');
+
+                    if (isWorkMode) {
+                        completedPomodoros++;
+                        document.getElementById('completedPomodoros').textContent = completedPomodoros;
+                        totalWorkMinutes += parseInt(document.getElementById('workDuration').value);
+                        document.getElementById('totalWorkTime').textContent = totalWorkMinutes;
+                        
+                        // 工作结束时播放彩纸效果
+                        launchConfetti();
+                    }
+
+                    setTimeout(() => {
+                        timerDisplay.classList.remove('shake');
+                        alert(isWorkMode ? '🎉 工作结束！休息一下吧~' : '💪 休息结束！继续加油！');
+                        switchMode();
+                    }, 500);
+
+                    startBtn.disabled = false;
+                    pauseBtn.disabled = true;
+                }
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            if (!isRunning) return;
+            
+            clearInterval(timerInterval);
+            timerInterval = null;
+            isRunning = false;
+            startBtn.disabled = false;
+            pauseBtn.disabled = true;
+            timerDisplay.classList.remove('pulse');
+        }
+
+        function resetTimer() {
+            pauseTimer();
+            isWorkMode = true;
+            timeLeft = parseInt(document.getElementById('workDuration').value) * 60;
+            totalTime = timeLeft;
+            modeIndicator.textContent = '工作模式';
+            timerDisplay.className = 'timer-display work';
+            updateDisplay();
+        }
+
+        function skipToNext() {
+            pauseTimer();
+            switchMode();
+        }
+
+        function switchMode() {
+            isWorkMode = !isWorkMode;
+            
+            if (isWorkMode) {
+                timeLeft = parseInt(document.getElementById('workDuration').value) * 60;
+                modeIndicator.textContent = '工作模式';
+                timerDisplay.className = 'timer-display work';
+            } else {
+                timeLeft = parseInt(document.getElementById('breakDuration').value) * 60;
+                modeIndicator.textContent = '休息模式';
+                timerDisplay.className = 'timer-display break';
+            }
+            
+            totalTime = timeLeft;
+            updateDisplay();
+        }
+
+        function updateSettings() {
+            if (!isRunning) {
+                const workDuration = parseInt(document.getElementById('workDuration').value) || 25;
+                const breakDuration = parseInt(document.getElementById('breakDuration').value) || 5;
+                
+                if (isWorkMode) {
+                    timeLeft = workDuration * 60;
+                } else {
+                    timeLeft = breakDuration * 60;
+                }
+                totalTime = timeLeft;
+                updateDisplay();
+            }
+        }
+
+        // 彩纸庆祝效果
+        function launchConfetti() {
+            const canvas = document.getElementById('confetti-canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const particles = [];
+            const particleCount = 150;
+            const colors = ['#FF6347', '#FF8C00', '#FFD700', '#FFA500', '#FF69B4', '#FF1493', '#FFB6C1', '#FFC0CB'];
+
+            // 创建粒子
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height - canvas.height,
+                    w: Math.random() * 10 + 5,
+                    h: Math.random() * 6 + 3,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    speedY: Math.random() * 3 + 2,
+                    speedX: Math.random() * 4 - 2,
+                    rotation: Math.random() * 360,
+                    rotationSpeed: Math.random() * 10 - 5,
+                    opacity: 1
+                });
+            }
+
+            let animationId;
+            let frame = 0;
+            const maxFrames = 180; // 3秒
+
+            function animate() {
+                if (frame >= maxFrames) {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    cancelAnimationFrame(animationId);
+                    return;
+                }
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                frame++;
+
+                particles.forEach(p => {
+                    p.y += p.speedY;
+                    p.x += p.speedX;
+                    p.rotation += p.rotationSpeed;
+                    p.speedY += 0.1; // 重力效果
+
+                    // 3秒后开始淡出
+                    if (frame > maxFrames - 60) {
+                        p.opacity -= 0.016;
+                    }
+
+                    ctx.save();
+                    ctx.translate(p.x, p.y);
+                    ctx.rotate((p.rotation * Math.PI) / 180);
+                    ctx.globalAlpha = Math.max(0, p.opacity);
+                    ctx.fillStyle = p.color;
+                    ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+                    ctx.restore();
+                });
+
+                animationId = requestAnimationFrame(animate);
+            }
+
+            animate();
+        }
+
+        // 初始化
+        updateDisplay();
+    </script>
+</body>
+</html>

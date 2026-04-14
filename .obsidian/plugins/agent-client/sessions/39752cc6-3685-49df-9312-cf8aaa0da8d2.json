@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "sessionId": "39752cc6-3685-49df-9312-cf8aaa0da8d2",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "ffe375e5-6102-4620-9575-aa2a66718b1f",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "你的AI model是哪一个，版本多少",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-27T08:29:48.723Z"
+    },
+    {
+      "id": "cc191035-fb55-4c5a-b13a-596000727921",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "你的AI model是哪一个，版本多少",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-27T08:30:53.548Z"
+    }
+  ],
+  "savedAt": "2026-02-27T08:30:53.820Z"
+}

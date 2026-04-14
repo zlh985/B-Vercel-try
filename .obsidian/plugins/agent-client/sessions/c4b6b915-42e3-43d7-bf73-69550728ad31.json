@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "sessionId": "c4b6b915-42e3-43d7-bf73-69550728ad31",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "ae8a194d-9792-42d0-9815-e5824bd73c18",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/caveman wenyan"
+        }
+      ],
+      "timestamp": "2026-04-10T01:46:59.143Z"
+    },
+    {
+      "id": "1c846d41-9273-44eb-bc4e-3001a35a673d",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "用户激活文言 caveman 模式，需以简练文言确认模式已启用。\n"
+        },
+        {
+          "type": "text",
+          "text": "文言模式已启。\n\n今当何為？"
+        }
+      ],
+      "timestamp": "2026-04-10T01:47:01.999Z"
+    },
+    {
+      "id": "c531a70d-11a8-46af-bd5e-a32467dae29b",
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "/caveman full"
+        }
+      ],
+      "timestamp": "2026-04-10T01:47:56.851Z"
+    },
+    {
+      "id": "0b9642d9-397a-43c9-9372-cca168ec9ecb",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "agent_thought",
+          "text": "用户切换到 full caveman 模式，确认模式切换完成，询问下一步指令。"
+        },
+        {
+          "type": "text",
+          "text": "已切换至 full caveman 模式。\n\n何事吩咐？"
+        }
+      ],
+      "timestamp": "2026-04-10T01:47:58.391Z"
+    }
+  ],
+  "savedAt": "2026-04-10T01:47:59.105Z"
+}

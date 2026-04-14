@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "sessionId": "e46a06be-7281-48ae-b632-ed5836171d1a",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "585b4154-2be8-46c0-abec-4ab2d83bbdf7",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加循环说明",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-26T08:30:16.705Z"
+    },
+    {
+      "id": "d20bce6c-1b49-4d49-a16c-bb21258a7873",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "增加循环说明",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-26T08:30:41.292Z"
+    }
+  ],
+  "savedAt": "2026-02-26T08:30:41.609Z"
+}

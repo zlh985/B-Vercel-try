@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "sessionId": "63d21b45-e175-4939-b332-e31452501043",
+  "agentId": "claude-code-acp",
+  "messages": [
+    {
+      "id": "554a83f4-77bd-42d9-aeab-e16091cddb73",
+      "role": "user",
+      "content": [
+        {
+          "type": "text_with_context",
+          "text": "1-0.0000001等于多少",
+          "autoMentionContext": {
+            "noteName": "test01",
+            "notePath": ".windsurf/workflows/test01.md"
+          }
+        }
+      ],
+      "timestamp": "2026-02-27T08:33:44.779Z"
+    },
+    {
+      "id": "a8602beb-03e8-467c-a60a-39c564996a98",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "1 - 0.0000001 = 0.9999999"
+        }
+      ],
+      "timestamp": "2026-02-27T08:33:53.374Z"
+    }
+  ],
+  "savedAt": "2026-02-27T08:33:53.722Z"
+}

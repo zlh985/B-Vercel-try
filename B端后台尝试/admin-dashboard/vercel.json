@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "framework": "vite"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/[^.]+$",
+      "dest": "/index.html",
+      "status": 200
+    }
+  ],
+  "github": {
+    "silent": true
+  },
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
